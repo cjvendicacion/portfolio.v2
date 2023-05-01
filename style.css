@@ -1,0 +1,147 @@
+@import url('animations.css');
+
+@media screen and (min-width: 768px) {
+    *{ 
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(1, 0, 35);
+    }
+    .nav-bar{
+        position: fixed;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 100%;
+        height: 10%;
+
+        background-image: url("/images/background/space.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+        font-family: 'Punizione';
+    }
+    .nav-bar a{
+        color: white;
+        text-decoration: none;
+    }
+    .nav-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 15%;
+        height: 50%;
+    }
+    .nav-icon :is(:hover, :active){
+        border-top: 2px solid white;
+    }
+    .nav-icon img{
+        width: 80%;
+        height: 80%;
+    }
+    .blur{
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(135deg, rgba(251, 233, 233, 0.1), rgba(153, 153, 153, 0.1));
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        background-color: white;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .flex-container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .image{
+        width: 100%;
+        height: 80%;
+
+        background-image: url("/images/background/space.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        padding-top: 10%;
+    }
+    .circle-image{
+        position: relative;
+        top: 90%;
+        left: 80%;
+        transform: translate(-50%, 50%);
+
+        background-image: url("/images/profile.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        width: 10vh;
+        height: 10vh;
+        min-width: 200px;
+        min-height: 200px;
+    
+        border-radius: 50%;
+    }
+    .circle-image::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        outline: 8px solid white;
+        border-radius: 50%;
+        animation: outline-offset 5s infinite;
+      }
+    .text{
+        text-align: center;
+
+        background-image: url("/images/background/light-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        font-family: 'FFF Galaxy';
+        animation: shine 5s infinite;
+    }
+    .e1.in-viewport{
+        animation: slide-up .2s ease-in;
+    }
+    .e2.in-viewport{
+        animation: slide-up .4s ease-in;
+    }
+    .e3.in-viewport{
+        animation: slide-up .6s ease-in;
+    }
+    .e4.in-viewport{
+        animation: slide-up .8s ease-in;
+    }
+}    

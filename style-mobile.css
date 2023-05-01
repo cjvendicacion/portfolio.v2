@@ -1,0 +1,243 @@
+@import url('animations.css');
+@import url('https://fonts.cdnfonts.com/css/fff-galaxy');
+@import url('https://fonts.cdnfonts.com/css/punizione');
+@import url('https://fonts.cdnfonts.com/css/wagnasty');
+
+@media screen and (max-width: 768px) {
+    * { 
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: rgb(1, 0, 35);
+        overflow-x: hidden;
+    }
+    section{
+        width: 100vw;
+        height: fit-content;
+
+        min-height: 800px;
+    }
+    .nav-bar{
+        position: fixed;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 100%;
+        height: 10%;
+
+        background: linear-gradient(to bottom, rgb(1, 0, 35), rgb(18, 18, 18));
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+        font-family: 'Punizione';
+        z-index: 1;
+        overflow: hidden;
+    }
+    .nav-bar a{
+        color: white;
+        text-decoration: none;
+    }
+    .nav-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 15%;
+        height: 50%;
+    }
+    .nav-icon :is(:hover, :active){
+        border-top: 2px solid white;
+    }
+    .nav-icon img{
+        width: 100%;
+        height: 100%;
+    }
+    .blur{
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(135deg, rgba(251, 233, 233, 0.1), rgba(153, 153, 153, 0.1));
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+    .image {
+        width: 100vw;
+        height: 60vh;
+
+        background-image: url("/images/background/space.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        padding-top: 10%;
+    }
+    .circle-image{
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-image: url("/images/profile.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        width: 10vh;
+        height: 10vh;
+        min-width: 200px;
+        min-height: 200px;
+    
+        border-radius: 50%;
+    }
+    .circle-image::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        outline: 8px solid white;
+        border-radius: 50%;
+        animation: outline-offset 5s infinite;
+    }
+    .text{
+        text-align: center;
+
+        background-image: url("/images/background/light-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        font-family: 'FFF Galaxy';
+        animation: shine 5s infinite;
+    }
+    h1.text{
+        font-size: 3.75rem;
+    }
+    h2.text{
+        font-size: 2.25rem;
+    }
+    h3.text{
+        font-size: 1.5rem;
+    }
+    .text-container{
+        padding: 2.5vh;
+    }
+    .text-container p{
+        font-family: 'Wagnasty';
+        color: white;
+    }
+    .text-container h1{
+        font-size: 1.75rem;
+        background-image: url("/images/background/light-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        font-family: 'FFF Galaxy';
+        animation: shine 5s infinite;
+    }
+    p a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+
+        animation: shine 2.5s infinite;
+    }
+    .project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 5vh;
+
+        overflow-x: auto;
+        margin-top: 10vh;
+
+        font-family: 'FFF Galaxy';
+        color: white;
+    }
+    .project p{
+        margin: 1vh;
+        font-family: 'Wagnasty';
+        color: white;
+    }
+    .project img{
+        width: 100vw;
+        max-height: 500px;
+    }
+    .skill.list{
+        margin: 5%;
+    }
+    .list{
+        color: white;
+        font-family: 'FFF Galaxy';
+    }
+    .list a{
+        text-decoration: none;
+        color: white;
+    }
+    .item{
+        width: 100%;
+        height: auto;
+
+        margin-top: 1vw;
+        padding: 1vh;
+        background: linear-gradient(90deg, rgba(71, 71, 71, 0.1), rgba(44, 44, 44, 0.1));
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+    .item img{
+        width: 15%;
+    }
+    .progress-bar {
+        width: 100%;
+        height: 15px;
+    }
+    .filler{
+        height: 200px;
+    }
+    .e1.in-viewport{
+        animation: slide-up .2s ease-in;
+    }
+    .e2.in-viewport{
+        animation: slide-up .4s ease-in;
+    }
+    .e3.in-viewport{
+        animation: slide-up .6s ease-in;
+    }
+    .e4.in-viewport{
+        animation: slide-up .8s ease-in;
+    }
+    .e5.in-viewport{
+        animation: slide-right .6s ease-in, shine 2.5s infinite;
+    }
+    .e6.in-viewport{
+        animation: slide-left .4s ease-in;
+    }
+    .e7.in-viewport{
+        animation: fade-in .8s ease-in;
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+}
