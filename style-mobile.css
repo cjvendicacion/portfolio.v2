@@ -71,7 +71,7 @@
         width: 100vw;
         height: 60vh;
 
-        background-image: url("/images/background/space.jpg");
+        background-image: url("images/background/space.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -84,7 +84,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        background-image: url("/images/profile.jpeg");
+        background-image: url("images/profile.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -104,13 +104,12 @@
         right: -2px;
         bottom: -2px;
         outline: 8px solid white;
-        border-radius: 50%;
         animation: outline-offset 5s infinite;
     }
     .text{
         text-align: center;
 
-        background-image: url("/images/background/light-background.jpg");
+        background-image: url("images/background/light-background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -139,7 +138,7 @@
     }
     .text-container h1{
         font-size: 1.75rem;
-        background-image: url("/images/background/light-background.jpg");
+        background-image: url("images/background/light-background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
